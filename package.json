@@ -1,0 +1,34 @@
+{
+  "name": "@elumixor/zod-config-cli",
+  "version": "0.1.0",
+  "description": "Read config from file, env, and CLI args — validated with Zod",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --sourcemap=external && tsc --project tsconfig.build.json",
+    "test": "bun test",
+    "lint": "biome lint src",
+    "release:patch": "npm version patch -m \"Release v%s\" && git push --tags",
+    "release:minor": "npm version minor -m \"Release v%s\" && git push --tags",
+    "release:major": "npm version major -m \"Release v%s\" && git push --tags"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.8",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5",
+    "zod": "^4"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  }
+}
