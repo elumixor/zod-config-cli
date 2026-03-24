@@ -1,4 +1,4 @@
-import { parseArgs } from "util";
+import { parseArgs } from "node:util";
 import { z } from "zod";
 
 function buildCliOptions(schema: z.ZodTypeAny) {

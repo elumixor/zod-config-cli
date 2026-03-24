@@ -1,6 +1,6 @@
+import fs from "node:fs";
+import path from "node:path";
 import dotenv from "dotenv";
-import fs from "fs";
-import path from "path";
 import { z } from "zod";
 
 export function loadEnv(cwd: string): Record<string, string> {

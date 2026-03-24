@@ -1,4 +1,4 @@
-import { z } from "zod";
+import type { z } from "zod";
 import { parseCli } from "./cli-parser";
 import { loadEnv, extractEnv } from "./env-loader";
 import { resolveConfigFile, loadConfigFile } from "./file-loader";
