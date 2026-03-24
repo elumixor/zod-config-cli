@@ -1,6 +1,6 @@
 {
   "name": "@elumixor/zod-config-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Read config from file, env, and CLI args — validated with Zod",
   "type": "module",
   "main": "dist/index.js",
